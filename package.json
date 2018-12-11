@@ -1,0 +1,36 @@
+{
+  "name": "fontify-for-blink",
+  "version": "0.0.1",
+  "description": "Generates @font-face CSS files for Blink terminal emulator for iOS",
+  "engines": {
+    "node": ">=10.14.0"
+  },
+  "bin": {
+    "fontify-blink": "bin/fontify-blink"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c --environment BUILD:production",
+    "start": "rollup -c && node bin/fontify-blink",
+    "debug": "rollup -c && node --nolazy --inspect-brk=5858 bin/fontify-blink"
+  },
+  "author": "Michael Yount <michael@yount.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-preset-minify": "^0.5.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "^4.0.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "mime": "^2.4.0",
+    "minimist": "^1.2.0",
+    "opentype.js": "^0.11.0",
+    "ora": "^3.0.0"
+  }
+}
