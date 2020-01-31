@@ -1,4 +1,6 @@
 # Fontify for Blink
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmyount%2Ffontify-for-blink.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmyount%2Ffontify-for-blink?ref=badge_shield)
+
 
 Fontify for Blink is a quick-and-dirty tool I wrote to generate font CSS files for the [Blink Shell](https://blink.sh/) terminal for iOS, in order to spare myself the tedium of having to hand-base64-encode and hand-write the `@font-face` blocks for a font that I wanted to add, and also to experiment with writing a command-line Node app using ES6.
 
@@ -22,3 +24,7 @@ Options
 ## Notes
 
 Fontify is transpiled and bundled using Babel and Rollup, formatted and linted using Prettier and ESLint, and relies on opentype.js for font parsing (to ge the names/weights of the provided fonts), as well as minimist for command line parsing, and ora for a processing indicator.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmyount%2Ffontify-for-blink.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmyount%2Ffontify-for-blink?ref=badge_large)
